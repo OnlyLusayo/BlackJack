@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>CasinoOnly - BlackJack</title>
+  </head>
+  <body>
+    <div class="top-nav">
+      <div class="container">
+        <div class="brand-logo">
+          <img src="./assets/images/custom-images/022-chip-4.png" alt="" />
+          <h2>BlackJack</h2>
+        </div>
+        <div class="timestamp"></div>
+      </div>
+    </div>
+
+    <div class="container-area">
+      <div class="game-play-area">
+        <div class="score-board">
+          <div class="user-score-card">
+            <div class="user-score">
+              <h1>0</h1>
+            </div>
+            <div class="user-label">User</div>
+          </div>
+          <div class="game-control-area">
+            <div class="control-buttons buttonbox" id="newgame">
+              <button alt="play" id="play" class="hidden">
+                <img
+                  src="./assets/images/custom-images/022-chip-4.png"
+                  alt=""
+                  srcset=""
+                />
+              </button>
+              <div class="buttonbox" id="buttonBox">
+                <button alt="hit" id="hit">
+                  <img
+                    src="./assets/images/custom-images/026-chip.png"
+                    alt=""
+                    srcset=""
+                  />
+                </button>
+                <button alt="stay" id="stay">
+                  <img
+                    src="./assets/images/custom-images/039-spades.png"
+                    alt=""
+                    srcset=""
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="dealer-score-card">
+            <div class="dealer-score">
+              <h1>0</h1>
+            </div>
+            <div class="dealer-label">Dealer</div>
+          </div>
+        </div>
+
+        <div class="card-dealing-area">
+          <div class="dealer-card-area">
+            <h1>Dealer</h1>
+            <!-- 3 -->
+            <div class="cards">
+              <section class="card card--heart" value="3">
+                <div class="card__inner card__inner--centered">
+                  <div class="card__column">
+                    <div class="card__symbol"></div>
+                    <div class="card__symbol"></div>
+                    <div class="card__symbol"></div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="player-card-area">
+            <h1>User</h1>
+            <div class="cards">
+              <section class="card card--heart" value="3">
+                <div class="card__inner card__inner--centered">
+                  <div class="card__column">
+                    <div class="card__symbol"></div>
+                    <div class="card__symbol"></div>
+                    <div class="card__symbol"></div>
+                  </div>
+                </div>
+              </section>
+              <section class="card card--heart" value="3">
+                <div class="card__inner card__inner--centered">
+                  <div class="card__column">
+                    <div class="card__symbol"></div>
+                    <div class="card__symbol"></div>
+                    <div class="card__symbol"></div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"></div>
+
+    <script src="assets/js/blackjack.js"></script>
+  </body>
+</html>

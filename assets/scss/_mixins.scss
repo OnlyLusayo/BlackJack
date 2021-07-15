@@ -1,0 +1,28 @@
+@mixin justifyContentBetween{
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin justifyContentCenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin justifyContentCenterRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin scoreCard{
+   background: $white-color;
+   width: 150px;
+   height: 150px;
+   border-radius: 10px;
+   display: grid;
+
+   @include justifyContentCenter
+}

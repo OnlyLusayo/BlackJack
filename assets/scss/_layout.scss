@@ -1,0 +1,54 @@
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.container{
+    margin: auto 3rem;
+}
+
+.container-area{
+    margin: 0 300px;
+}
+
+.score-board{
+    margin-top: 2rem;
+    @include justifyContentBetween;
+
+    .user-score-card,.dealer-score-card{
+        @include scoreCard;
+    }
+}
+
+.card-dealing-area{
+    margin-top: 2rem;
+    border-radius: 10px;
+    background: $light-color;
+    @include justifyContentCenter
+}
+
+.game-control-area{
+    @extend .card-dealing-area;
+    background: $dark-color;
+
+    button{
+        width: 75px;
+        border-radius: 3rem;
+        border: 2px solid $dark-color;
+        margin: 2rem;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .control-buttons{
+        width: 100%;
+        @include justifyContentCenterRow;
+    }
+}
+
+.hidden
+{
+    display: none;
+}

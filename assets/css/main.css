@@ -1,0 +1,218 @@
+@charset "UTF-8";
+body {
+  background: url("../images/background-pattern.png") !important;
+  background-repeat: repeat;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.container {
+  margin: auto 3rem;
+}
+
+.container-area {
+  margin: 0 300px;
+}
+
+.score-board {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.score-board .user-score-card, .score-board .dealer-score-card {
+  background: #ffffff;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-dealing-area, .game-control-area {
+  margin-top: 2rem;
+  border-radius: 10px;
+  background: #f6f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-control-area {
+  background: #000000;
+}
+
+.game-control-area button {
+  width: 75px;
+  border-radius: 3rem;
+  border: 2px solid #000000;
+  margin: 2rem;
+}
+
+.game-control-area button img {
+  width: 100%;
+}
+
+.game-control-area .control-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.top-nav {
+  height: 100px;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  color: #f6f4f4;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.top-nav .brand-logo {
+  display: flex;
+  align-items: center;
+}
+
+.top-nav .brand-logo img {
+  width: 50px;
+  margin: 1rem;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #f0f0f0;
+}
+
+.cards {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+  width: 172px;
+  height: 240px;
+  font: 16px "Trebuchet MS";
+  margin: 10px;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+}
+
+.card:before, .card:after {
+  content: attr(value);
+  position: absolute;
+  width: 12px;
+  text-align: center;
+  letter-spacing: -2px;
+}
+
+.card:before {
+  top: 4px;
+  left: 4px;
+}
+
+.card:after {
+  bottom: 4px;
+  right: 4px;
+  transform: rotate(180deg);
+}
+
+.card--heart {
+  color: #e44145;
+}
+
+.card--heart:before, .card--heart:after {
+  content: attr(value) " ♥";
+}
+
+.card--spade {
+  color: #252525;
+}
+
+.card--spade:before, .card--spade:after {
+  content: attr(value) " ♠";
+}
+
+.card__inner {
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 24px;
+  left: 24px;
+  right: 24px;
+  bottom: 24px;
+}
+
+.card__inner--centered {
+  justify-content: center;
+}
+
+.card__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__column--centered {
+  justify-content: center;
+}
+
+.card__symbol {
+  display: inline-block;
+  height: 40px;
+  text-align: center;
+}
+
+.card__symbol:before {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.card--heart .card__symbol:before {
+  content: '♥';
+}
+
+.card--spade .card__symbol:before {
+  content: '♠';
+}
+
+.card__symbol--rotated, .card__symbol:last-of-type {
+  transform: rotate(180deg);
+}
+
+.card__symbol:first-of-type {
+  transform: rotate(0);
+}
+
+.card__symbol--big {
+  flex-basis: 60px;
+}
+
+.card__symbol--huge {
+  flex-basis: 108px;
+}
+
+.title {
+  font: 18px 'Trebuchet MS';
+  color: #444;
+  text-align: center;
+}

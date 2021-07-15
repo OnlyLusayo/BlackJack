@@ -1,0 +1,19 @@
+.top-nav{
+    height: 100px;
+    background-color: $dark-color;
+    display: flex;
+    align-items: center;
+    color: $light-color;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+
+    .brand-logo{
+        
+        display: flex;
+        align-items: center;
+
+        img{
+            width: 50px;
+            margin: 1rem;
+        }
+    }
+}
